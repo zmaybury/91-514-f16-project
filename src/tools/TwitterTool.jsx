@@ -75,6 +75,17 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 					tweetLimit: '5'
 				}).then(function (el) { }
 			);
+		else
+			twttr.widgets.createTimeline(
+				id,
+				tweet,
+				{
+					width: '450',
+					height: '700',
+					related: 'twitterdev,twitterapi',
+					tweetLimit: '5'
+				}).then(function (el) { }
+			);
 	}
 
 	componentDidMount () {

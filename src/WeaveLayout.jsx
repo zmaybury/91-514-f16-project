@@ -23,7 +23,7 @@ export default class WeaveLayout extends React.Component {
 
     render() {
 		return (
-			<VBox style={{width: "100%", height: "100%", backgroundColor: "#EAEAEA"}}>
+			<VBox style={_.merge({width: "100%", height: "100%", backgroundColor: "#EAEAEA"},this.props.style)}>
 				<HBox style={{display: "flex", flex:1, backgroundColor: "#FFFFFF"}}>
 					<WeaveComponentRenderer weave={this.weave} path={["Layout"]}/>
 				</HBox>
