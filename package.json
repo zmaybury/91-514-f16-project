@@ -35,6 +35,9 @@
     "react-dom": "^0.14.7",
     "react-vendor-prefix": "0.0.1",
     "twitter-node-client": "^0.0.6",
+	"twit": "^2.2.3",
+	"twitter": "^1.2.5",
+	"request": "^2.72.0",
     "weave-html5": "git+ssh://git@github.com:WeaveTeam/weave-html5.git#develop"
   }
 }
