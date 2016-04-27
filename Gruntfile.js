@@ -23,6 +23,7 @@ module.exports = function (grunt) {
             fontawesomefont: {expand: true, flatten: true, cwd: 'node_modules/font-awesome/fonts', src: '*', dest: 'dist/fonts/'},
             fonts: {expand: true, flatten: true, cwd: 'node_modules/bootstrap', src: 'fonts/*.*', dest: 'dist/fonts/'},
             semantic: {expand: true, cwd: 'src/semantic', src: '**', dest: 'dist/semantic/'},
+	        weave: {expand: true, cwd: 'weavejs', src: '**', dest: 'dist/weavejs/'},
             weavesessions: {expand: true, flatten: true, cwd: 'weave_sessions', src: "*", dest: "dist/"}
         },
         clean: {
