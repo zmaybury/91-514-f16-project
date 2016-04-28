@@ -24,6 +24,8 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 		this.filteredKeySet = Weave.linkableChild(this, weavejs.data.key.FilteredKeySet);
 		this.selectionKeySet = Weave.linkableChild(this, weavejs.data.key.KeySet);
 		this.probeKeySet = Weave.linkableChild(this, weavejs.data.key.KeySet);
+		this.defaultHandle = Weave.linkableChild(this, new weavejs.core.LinkableString("ESPNNBA"));
+		this.displayedHandle = Weave.linkableChild(this, weavejs.core.LinkableString);
 		//this.handleColumn = Weave.linkableChild(this, weavejs.data.column.DynamicColumn);
 		this.element = null;
 
@@ -37,7 +39,7 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 
 		this.records = [];
 
-		this.state = {twitterHandle:null};
+		//this.state = {twitterHandle:null};
 
 		this.debounced_linkState = _.debounce(this.linkState,30);
 
@@ -63,17 +65,17 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 		var id = tweet.getAttribute("data-widget-id");
 		$(this.element).find("#tweet").empty();
 
-		if(this.records && this.records[0] && this.records[0].Twitter)
-			this.updateTimeline(this.records[0].Twitter.slice(1));
-		else
-			this.updateTimeline("ESPNNBA");
+		if(this.records && this.records[0])
+			this.displayedHandle.value = this.records[0].Twitter.slice(1);
+
+		this.updateTimeline(this.displayedHandle.value || this.defaultHandle.value);
 	}
 
 	componentDidMount () {
 
 		this.element = ReactDOM.findDOMNode(this);
 		this.debounced_linkState();
-		this.updateTimeline("ESPNNBA");
+		this.updateTimeline(this.defaultHandle.value);
 
 	}
 
