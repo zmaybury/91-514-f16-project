@@ -1,5 +1,5 @@
 import React from "react";
-import {ui, MiscUtils, WeaveComponentRenderer} from "weave-html5";
+import {ui, MiscUtils, WeaveComponentRenderer, WeaveApp} from "weave-html5";
 import {VBox, HBox} from "weave-html5";
 
 function loadWeaveSession(weaveInstance,sessionFileUrl, callback)
@@ -23,11 +23,12 @@ export default class WeaveLayout extends React.Component {
 
     render() {
 		return (
-			<VBox style={_.merge({width: "100%", height: "100%", backgroundColor: "#EAEAEA"},this.props.style)}>
-				<HBox style={{display: "flex", flex:1, backgroundColor: "#FFFFFF"}}>
-					<WeaveComponentRenderer weave={this.weave} path={["Layout"]}/>
-				</HBox>
-			</VBox>
+			<WeaveApp
+			    readUrlParams={true}
+			    weave={this.weave}
+			    renderPath={["Layout"]}
+			    style={{width: "100%", height: "100%"}}
+		    />
 		);
     }
 }

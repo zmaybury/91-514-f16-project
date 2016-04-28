@@ -17,10 +17,10 @@ export default class Container extends React.Component {
 	render() {
 		return (
 			<HBox style={{width: "100%", height: "100%", backgroundColor: "#EAEAEA"}}>
-				<VBox style={{display: "flex", flex:3, backgroundColor: "#FFFFFF"}}>
+				<VBox style={{display: "flex", flex:1, backgroundColor: "#FFFFFF"}}>
 					<WeaveLayout weave={weave}/>
 				</VBox>
-				<VBox style={_.merge({display: "flex", flex:1, backgroundColor: "#FFFFFF"},{border:"1px solid lightgrey",padding:2})}>
+				<VBox style={{backgroundColor: "#FFFFFF", border:"1px solid lightgrey",padding:2}}>
 					<TwitterTool/>
 				</VBox>
 			</HBox>
