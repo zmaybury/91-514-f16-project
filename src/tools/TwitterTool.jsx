@@ -27,7 +27,10 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 		this.defaultHandle = Weave.linkableChild(this, new weavejs.core.LinkableString("ESPNNBA"));
 		this.displayedHandle = Weave.linkableChild(this, weavejs.core.LinkableString);
 		//this.handleColumn = Weave.linkableChild(this, weavejs.data.column.DynamicColumn);
+		this.handleColumn = Weave.linkableChild(this, weavejs.core.LinkableString);
 		this.element = null;
+		this.handleColumn.value = props.handleColumnID;
+		if (props.defaultHandle) this.defaultHandle.value = props.defaultHandle;
 
 		// this.RECORD_FORMAT = {
 		// 	id: weavejs.api.data.IQualifiedKey,
@@ -53,7 +56,7 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 		//this.records = weavejs.data.ColumnUtils.getRecords(this.RECORD_FORMAT, this.selectionKeySet.keys, this.RECORD_DATATYPE);
 
 		let idProperty = '';
-		var ds = weave.getObject("2015-2016_NBA_Media.csv");
+		var ds = weave.getObject("CSV file");
 		var columnNames = ds.getColumnNames();
 		var columns = columnNames.map((name) => ds.getColumnByName(name));
 
@@ -66,7 +69,7 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 		$(this.element).find("#tweet").empty();
 
 		if(this.records && this.records[0])
-			this.displayedHandle.value = this.records[0].Twitter.slice(1);
+			this.displayedHandle.value = this.records[0][this.handleColumn.value].slice(1);
 
 		this.updateTimeline(this.displayedHandle.value || this.defaultHandle.value);
 	}
@@ -101,7 +104,7 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 	}
 
 	linkState() {
-		if(!weave.getObject("ScatterPlotTool","filteredKeySet") || !weave.getObject("2015-2016_NBA_Media.csv"))
+		if(!weave.getObject("ScatterPlotTool","filteredKeySet") || !weave.getObject("CSV file"))
 			return this.debounced_linkState();
 		Weave.linkState(weave.getObject("defaultSelectionKeySet"),this.selectionKeySet);
 		Weave.linkState(weave.getObject("defaultProbeKeySet"),this.probeKeySet);

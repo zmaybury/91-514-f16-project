@@ -21,7 +21,15 @@ export default class Container extends React.Component {
 					<WeaveLayout weave={weave}/>
 				</VBox>
 				<VBox style={{backgroundColor: "#FFFFFF", border:"1px solid lightgrey",padding:2}}>
-					<TwitterTool/>
+					<HBox style={{display: "flex", flex:1}}>
+						<TwitterTool defaultHandle="ESPNNBA" handleColumnID="Twitter"/>
+					</HBox>
+					<HBox style={{display: "flex", flex:1}}>
+						<TwitterTool defaultHandle="SHAQ" handleColumnID="Team Twitter"/>
+					</HBox>
+					<HBox style={{display: "flex", flex:1}}>
+						<TwitterTool defaultHandle="NBAonTNT" handleColumnID="Arena Twitter"/>
+					</HBox>
 				</VBox>
 			</HBox>
 		);
