@@ -63,36 +63,25 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 		var id = tweet.getAttribute("data-widget-id");
 		$(this.element).find("#tweet").empty();
 
-		if(this.records && this.records[0])
-			twttr.widgets.createTimeline(
-				id,
-				tweet,
-				{
-					width: '450',
-					height: '700',
-					related: 'twitterdev,twitterapi',
-					screenName: this.records[0].Twitter.slice(1),
-					tweetLimit: '5'
-				}).then(function (el) { }
-			);
+		if(this.records && this.records[0] && this.records[0].Twitter)
+			this.updateTimeline(this.records[0].Twitter.slice(1));
 		else
-			twttr.widgets.createTimeline(
-				id,
-				tweet,
-				{
-					width: '450',
-					height: '700',
-					related: 'twitterdev,twitterapi',
-					tweetLimit: '5'
-				}).then(function (el) { }
-			);
+			this.updateTimeline("ESPNNBA");
 	}
 
 	componentDidMount () {
 
 		this.element = ReactDOM.findDOMNode(this);
 		this.debounced_linkState();
+		this.updateTimeline("ESPNNBA");
 
+	}
+
+	componentDidUpdate() {
+	}
+
+	updateTimeline(screenName)
+	{
 		var tweet = this.element.querySelector("#tweet");
 		var id = tweet.getAttribute("data-widget-id");
 		$(this.element).find("#tweet").empty();
@@ -103,15 +92,11 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 				width: '450',
 				height: '700',
 				related: 'twitterdev,twitterapi',
+				screenName,
 				tweetLimit: '5'
 			}).then(function (el) { }
 		);
 	}
-
-	componentDidUpdate() {
-	}
-
-
 
 	linkState() {
 		if(!weave.getObject("ScatterPlotTool","filteredKeySet") || !weave.getObject("2015-2016_NBA_Media.csv"))
