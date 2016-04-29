@@ -428,7 +428,7 @@ export default class AlchemyAPINewsTool extends React.Component<IVisToolProps, I
 
 	render(){
 		return(
-			<VBox style={{flex:1, overflow:"auto", height:"100%"}}>
+			<VBox style={{flex:1, overflow:"auto"}}>
 				<div className="ui feed">
 					{this.state.documents.map( (document,index) => {
 						var title = document.source.enriched.url.title;
