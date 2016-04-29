@@ -20,7 +20,7 @@ export default class Container extends React.Component {
 				<VBox style={{flex:3}}>
 					<HBox style={{flex:1, backgroundColor: "#EAEAEA"}}>
 						<VBox style={{display: "flex", flex:1, backgroundColor: "#FFFFFF"}}>
-							<WeaveLayout weave={weave}/>
+							<WeaveLayout weave={weave} style={{border:"2px solid gray", borderRadius:5}}/>
 						</VBox>
 					</HBox>
 					<HBox style={{backgroundColor: "#EAEAEA", flex:1}}>

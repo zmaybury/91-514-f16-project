@@ -115,7 +115,7 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 
 	render(){
 		return(
-			<VBox style={{flex:1, height:"100%"}}>
+			<VBox style={{flex:1, border:"2px solid gray", borderRadius:5}}>
 				<div id="tweet" data-widget-id="725155974143721472" style={{overflow:"auto"}}></div>
 			</VBox>);
 	}
