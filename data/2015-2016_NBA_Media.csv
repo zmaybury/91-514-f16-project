@@ -1,21 +1,21 @@
-Player,Team,Twitter,Team Twitter,Arena Twitter
-Stephen Curry,GSW,@StephenCurry30,@warriors,@OracleArena
-Kevin Durant,OKC,@KDTrey5,@okcthunder,@ChesapeakeArena
-Russell Westbrook,OKC,@russwest44,@okcthunder,@ChesapeakeArena
-LeBron James,CLE,@KingJames,@cavs,@TheQArena
-Chris Paul,LAC,@CP3,@LAClippers,@STAPLESCenter
-Kawhi Leonard,SAS,@kawhileonard,@spurs,@attcenter
-Hassan Whiteside,MIA,@youngwhiteside,@MiamiHEAT,@AAarena
-James Harden,HOU,@JHarden13,@HoustonRockets,@ToyotaCenter
-Anthony Davis,NOP,@AntDavis23,@PelicansNBA,@SmoothieKingCtr
-Enes Kanter,OKC,@Enes_Kanter,@okcthunder,@ChesapeakeArena
-DeMarcus Cousins,SAC,@boogiecousins,@SacramentoKings,@Golden1Center
-Jonas Valanciunas,TOR,@JValanciunas,@Raptors,@AirCanadaCentre
-Karl-Anthony Towns,MIN,@KarlTowns,@Timberwolves,@TargetCenterMN
-LaMarcus Aldridge,SAS,@AldridgeDaily,@spurs,@attcenter
-Damian Lillard,POR,@Dame_Lillard,@trailblazers,@ModaCenter
-Kyle Lowry,TOR,@Klow7,@Raptors,@AirCanadaCentre
-Greg Monroe,MIL,@M10OSE,@Bucks,@BMOHBC
-Brook Lopez,BRK,@BrookLopezNews,@BrooklynNets,@barclayscenter
-Pau Gasol,CHI,@paugasol,@chicagobulls,@UnitedCenter
-Derrick Favors,UTA,@dfavors14,@utahjazz,@vivintarena
+Player,Team,Twitter,Team Twitter,Arena Twitter,Team Name,City Name
+Stephen Curry,GSW,@StephenCurry30,@warriors,@OracleArena,Golden State Warriors,Oakland
+Kevin Durant,OKC,@KDTrey5,@okcthunder,@ChesapeakeArena,Thunder,Oklahoma City
+Russell Westbrook,OKC,@russwest44,@okcthunder,@ChesapeakeArena,Thunder,Oklahoma City
+LeBron James,CLE,@KingJames,@cavs,@TheQArena,Cavaliers,Cleveland
+Chris Paul,LAC,@CP3,@LAClippers,@STAPLESCenter,Clippers,Los Angeles
+Kawhi Leonard,SAS,@kawhileonard,@spurs,@attcenter,Spurs,San Antonio
+Hassan Whiteside,MIA,@youngwhiteside,@MiamiHEAT,@AAarena,Heat,Miami
+James Harden,HOU,@JHarden13,@HoustonRockets,@ToyotaCenter,Rockets,Houston
+Anthony Davis,NOP,@AntDavis23,@PelicansNBA,@SmoothieKingCtr,Pelicans,New Orleans
+Enes Kanter,OKC,@Enes_Kanter,@okcthunder,@ChesapeakeArena,Thunder,Oklahoma City
+DeMarcus Cousins,SAC,@boogiecousins,@SacramentoKings,@Golden1Center,Kings,Sacramento
+Jonas Valanciunas,TOR,@JValanciunas,@Raptors,@AirCanadaCentre,Raptors,Toronto
+Karl-Anthony Towns,MIN,@KarlTowns,@Timberwolves,@TargetCenterMN,Timberwolves,Minnesota
+LaMarcus Aldridge,SAS,@AldridgeDaily,@spurs,@attcenter,Spurs,San Antonio
+Damian Lillard,POR,@Dame_Lillard,@trailblazers,@ModaCenter,Trailblazers,Portland
+Kyle Lowry,TOR,@Klow7,@Raptors,@AirCanadaCentre,Raptors,Toronto
+Greg Monroe,MIL,@M10OSE,@Bucks,@BMOHBC,Bucks,Milwaukee
+Brook Lopez,BRK,@BrookLopezNews,@BrooklynNets,@barclayscenter,Nets,Brooklyn
+Pau Gasol,CHI,@paugasol,@chicagobulls,@UnitedCenter,Bulls,Chicago
+Derrick Favors,UTA,@dfavors14,@utahjazz,@vivintarena,Jazz,Utah

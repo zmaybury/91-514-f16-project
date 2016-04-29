@@ -7,7 +7,6 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import * as TwitterClient from "twitter-node-client";
 import {VBox, HBox} from "weave-html5";
 import * as jquery from "jquery";
 import * as _ from "lodash";
@@ -64,9 +63,6 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 		format[idProperty] = weavejs.api.data.IQualifiedKey;
 
 		this.records = weavejs.data.ColumnUtils.getRecords(format, this.selectionKeySet.keys, String);
-		var tweet = this.element.querySelector("#tweet");
-		var id = tweet.getAttribute("data-widget-id");
-		$(this.element).find("#tweet").empty();
 
 		if(this.records && this.records[0])
 			this.displayedHandle.value = this.records[0][this.handleColumn.value].slice(1);
@@ -94,8 +90,8 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 			id,
 			tweet,
 			{
-				width: '450',
-				height: '700',
+				width: String(this.element.clientWidth),
+				height: String(this.element.clientHeight),
 				related: 'twitterdev,twitterapi',
 				screenName,
 				tweetLimit: '5'
@@ -119,8 +115,8 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 
 	render(){
 		return(
-			<VBox style={{flex:1, overflow:"auto", height:"100%"}}>
-				<div id="tweet" data-widget-id="725155974143721472"></div>
+			<VBox style={{flex:1, height:"100%"}}>
+				<div id="tweet" data-widget-id="725155974143721472" style={{overflow:"auto"}}></div>
 			</VBox>);
 	}
 }
