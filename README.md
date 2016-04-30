@@ -18,6 +18,11 @@ Build this project using
   1. npm install
   2. grunt
 
+Outside Libraries Used:
+WeaveJS (www.iweave.com)
+Seamntic UI (www.semantic-ui.com)
+Twitter Widgets (https://dev.twitter.com/web/javascript)
+Alchemy API (http://www.alchemyapi.com)
 
 Initial dashboard view, showing structured data and visualizations, twitter feeds for related subjects, related news stories, and their overall sentiment scores.
 ![alt tag](https://github.com/zmaybury/91-514-f16-project/blob/master/images/Demo.png)
