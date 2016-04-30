@@ -26,3 +26,7 @@ Close up view of news sentiment analysis tool. Notice the positive sentiment rel
 
 The Dashboard supports multi-select, and will show linking across all simple visualizations, as well as pull in any relevent news or tweets involving the selected players.
 ![alt tag](https://github.com/zmaybury/91-514-f16-project/blob/master/images/Demo_Multi_Select.png)
+
+
+Close up view of structured data visualization dashboard.
+![alt tag](https://github.com/zmaybury/91-514-f16-project/blob/master/images/Structured_Data_Dashboard.png)
