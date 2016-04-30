@@ -5,6 +5,8 @@ This project includes tools to integrate twitter, news, video and simple analyti
 
 An example of this project is hosted at: http://example.iweave.com/~zmaybury/IWS2/
 
+This demo is meant for use with high resolution screens. You may need to zoom out your browser to have enough room to display visualizations.
+
 Build this project using
   1. npm install
   2. grunt
