@@ -20,7 +20,7 @@ Dashboard with Clippers guard Chris Paul selected. In this dashboard, relevent n
 ![alt tag](https://github.com/zmaybury/91-514-f16-project/blob/master/images/Demo_Paul_Selection_Recent_Injury_Negative.png)
   
 
-Close up view of news sentiment analysis tool. Notice the positive sentiment related to winning and the negative sentiment related to the referees.
+Close up view of news sentiment analysis tool. Notice the positive sentiment related to Charles Barkley picking Cleveland to win the finals and the negative sentiment related to the referreeing in recent games.<br/> 
 ![alt tag](https://github.com/zmaybury/91-514-f16-project/blob/master/images/News_Sentiment_Analysis.png)
 
 
