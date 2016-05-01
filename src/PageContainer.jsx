@@ -29,6 +29,24 @@ export default class Container extends React.Component {
 			on: 'hover'
 		});
 
+		$('.ui.sticky')
+			.sticky({
+				context: '#playertweet'
+			})
+		;
+
+		$('.ui.sticky')
+			.sticky({
+				context: '#teamtweet'
+			})
+		;
+
+		$('.ui.sticky')
+			.sticky({
+				context: '#arenatweet'
+			})
+		;
+
 		// fix menu when passed
 		$('.masthead')
 			.visibility({
@@ -153,22 +171,26 @@ export default class Container extends React.Component {
 
 				</div>
 
-				<div className="ui vertical stripe segment">
+				<div className="ui vertical stripe segment" id="playertweet">
 					<div className="ui middle aligned stackable grid container">
 						<div className="row" style={{height:600}}>
 							<div className="eight wide column">
 								<h3 className="ui header">We Help Companies and Companions</h3>
+								<p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+								<h3 className="ui header">We Make Bananas That Can Dance</h3>
 								<div className="ui fluid container">
 									<WeaveComponentRenderer weave={this.weave} path={["Color Legend"]} style={{width:"100%", height:"200px"}}/>
 								</div>
-								<h3 className="ui header">We Make Bananas That Can Dance</h3>
-								<VBox style={{height:250, flex:1, backgroundColor: "#EAEAEA"}}>
-									<TwitterTool defaultHandle="NBAonTNT" handleColumnID="Twitter"/>
-								</VBox>
+
 							</div>
 							<div className="eight wide column">
 								<div className="ui fluid container">
 									<WeaveComponentRenderer weave={this.weave} path={["ScatterPlotTool"]} style={{width:"100%", height:"100%"}}/>
+								</div>
+							</div>
+							<div className="right ui rail" style={{overflow:"auto"}}>
+								<div className="ui sticky">
+									<TwitterTool defaultHandle="NBAonTNT" handleColumnID="Twitter" style={{height:"100%"}}/>
 								</div>
 							</div>
 						</div>
