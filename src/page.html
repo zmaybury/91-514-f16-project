@@ -1,0 +1,57 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+<head>
+	<title>IWS2 Project</title>
+	<link href="css/c3.css" rel="stylesheet" type="text/css">
+	<link href="css/ol.css" rel="stylesheet" type="text/css">
+	<link href="css/ol-custom.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/rcslider.css" rel="stylesheet">
+	<link href="css/fixed-data-table.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+	<link href="css/weave.css" rel="stylesheet" type="text/css">
+	<link href="css/page.css" rel="stylesheet" type="text/css">
+	<script src="weavejs/js-release/WeaveJS.js"></script>
+	<script type="text/javascript">
+		new WeaveJS().start();
+	</script>
+
+	<!--TwitterTool Deps -->
+	<script>window.twttr = (function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0],
+				t = window.twttr || {};
+		if (d.getElementById(id)) return t;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "https://platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js, fjs);
+
+		t._e = [];
+		t.ready = function(f) {
+			t._e.push(f);
+		};
+
+		return t;
+	}(document, "script", "twitter-wjs"));</script>
+	<style>
+		#tweet iframe {
+			border: none !important;
+			box-shadow: none !important;
+		}
+	</style>
+	<script sync src="https://platform.twitter.com/widgets.js"></script>
+
+	<script src="Demo-page.min.js"></script>
+
+
+	<style>
+		#resizable { width: 150px; height: 150px; padding: 0.5em; }
+		#resizable h3 { text-align: center; margin: 0; }
+	</style>
+
+</head>
+<body style="overflow:scroll">
+<script src="semantic/semantic.min.js"></script>
+<div id="Container"></div>
+</body>
+</html>

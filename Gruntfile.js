@@ -12,7 +12,7 @@ module.exports = function (grunt) {
                 watch: true
             },
             dist: {
-                files: [{'dist/IWS2-app.min.js': 'src/IWS2-app.js'}]
+                files: [{'dist/IWS2-app.min.js': 'src/IWS2-app.js'},{'dist/Demo-page.min.js': 'src/Demo-page.js'}]
             }
         },
         copy: {

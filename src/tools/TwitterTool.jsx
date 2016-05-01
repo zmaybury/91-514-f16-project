@@ -90,7 +90,7 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 			id,
 			tweet,
 			{
-				width: String(this.element.clientWidth),
+				width: "100%",
 				height: String(this.element.clientHeight),
 				related: 'twitterdev,twitterapi',
 				screenName,
