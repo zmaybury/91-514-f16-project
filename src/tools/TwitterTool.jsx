@@ -86,7 +86,7 @@ export default class TwitterTool extends React.Component<IVisToolProps, IVisTool
 		var tweet = this.element.querySelector("#tweet");
 		var id = tweet.getAttribute("data-widget-id");
 		$(this.element).find("#tweet").empty();
-		twttr.widgets.createTimeline(
+		twttr.widgets && twttr.widgets.createTimeline(
 			id,
 			tweet,
 			{

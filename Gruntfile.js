@@ -12,7 +12,7 @@ module.exports = function (grunt) {
                 watch: true
             },
             dist: {
-                files: [{'dist/IWS2-app.min.js': 'src/IWS2-app.js'},{'dist/Demo-page.min.js': 'src/Demo-page.js'}]
+                files: [{'dist/IWS2-app.min.js': 'src/IWS2-app.js'},{'dist/Demo-page.min.js': 'src/Demo-page.js'},{'dist/UNO-app.min.js':'src/UNO-app.js'}]
             }
         },
         copy: {
@@ -23,6 +23,7 @@ module.exports = function (grunt) {
             fontawesomefont: {expand: true, flatten: true, cwd: 'node_modules/font-awesome/fonts', src: '*', dest: 'dist/fonts/'},
             fonts: {expand: true, flatten: true, cwd: 'node_modules/bootstrap', src: 'fonts/*.*', dest: 'dist/fonts/'},
             semantic: {expand: true, cwd: 'src/semantic', src: '**', dest: 'dist/semantic/'},
+            unofiles: {expand: true, cwd: 'src/uno_files', src: '**', dest: 'dist/uno_files/'},
 	        weave: {expand: true, cwd: 'weavejs', src: '**', dest: 'dist/weavejs/'},
             weavesessions: {expand: true, flatten: true, cwd: 'weave_sessions', src: "*", dest: "dist/"}
         },

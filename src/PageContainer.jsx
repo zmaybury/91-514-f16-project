@@ -37,13 +37,7 @@ export default class Container extends React.Component {
 
 		$('.ui.sticky')
 			.sticky({
-				context: '#teamtweet'
-			})
-		;
-
-		$('.ui.sticky')
-			.sticky({
-				context: '#arenatweet'
+				context: '#maptweet'
 			})
 		;
 
@@ -163,9 +157,9 @@ export default class Container extends React.Component {
 
 					<div className="ui text container">
 						<h1 className="ui inverted header">
-							Imagine-a-Company
+							Weave Visual Analytics
 						</h1>
-						<h2>Do whatever you want when you want to.</h2>
+						<h2>Visualize Your Data</h2>
 						<div className="ui huge primary button">Get Started <i className="right arrow icon"/></div>
 					</div>
 
@@ -174,23 +168,16 @@ export default class Container extends React.Component {
 				<div className="ui vertical stripe segment" id="playertweet">
 					<div className="ui middle aligned stackable grid container">
 						<div className="row" style={{height:600}}>
-							<div className="eight wide column">
+							<div className="six wide column">
 								<h3 className="ui header">We Help Companies and Companions</h3>
-								<p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-								<h3 className="ui header">We Make Bananas That Can Dance</h3>
-								<div className="ui fluid container">
-									<WeaveComponentRenderer weave={this.weave} path={["Color Legend"]} style={{width:"100%", height:"200px"}}/>
-								</div>
-
+									<TwitterTool defaultHandle="NBAonTNT" handleColumnID="Twitter" style={{height:500,width:"100%"}}/>
 							</div>
-							<div className="eight wide column">
+							<div className="ten wide column">
 								<div className="ui fluid container">
-									<WeaveComponentRenderer weave={this.weave} path={["ScatterPlotTool"]} style={{width:"100%", height:"100%"}}/>
-								</div>
-							</div>
-							<div className="right ui rail" style={{overflow:"auto"}}>
-								<div className="ui sticky">
-									<TwitterTool defaultHandle="NBAonTNT" handleColumnID="Twitter" style={{height:"100%"}}/>
+									<WeaveComponentRenderer weave={this.weave} path={["ScatterPlotTool"]} style={{width:"100%", height:"400px"}}/>
+									<div className="ui fluid container">
+										<WeaveComponentRenderer weave={this.weave} path={["Color Legend"]} style={{width:"100%", height:"200px"}}/>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -213,7 +200,7 @@ export default class Container extends React.Component {
 							<div className="column">
 								<h3>"I shouldn't have gone with their competitor."</h3>
 								<p>
-									<img src="assets/images/avatar/nan.jpg" className="ui avatar image"/> <b>Nan</b> Chief Fun Officer Acme Toys
+									<b>Nan</b> Chief Fun Officer Acme Toys
 								</p>
 							</div>
 						</div>
@@ -287,7 +274,7 @@ export default class Container extends React.Component {
 					</div>
 					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-					<div className="ui left floated grid container">
+					<div className="ui left floated grid container" id="maptweet">
 						<div className="ui fluid centered card">
 							<div className="image" style={{display:"flex", height:"750px"}}>
 								<VBox>
