@@ -2,12 +2,11 @@
   "name": "91.514_IWS2_Project",
   "version": "1.0.0",
   "description": "Project for IWS2",
-  "author": "Zachary Maybury"
+  "author": "Zachary Maybury",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/jshint/bin/jshint hello.js"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel": "^6.1.18",
