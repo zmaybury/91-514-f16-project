@@ -1,10 +1,11 @@
 {
   "name": "91.514_IWS2_Project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project for IWS2",
+  "author": "Zachary Maybury"
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/jshint/bin/jshint hello.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-minifyify": "^3.2.1",
+    "jshint": "^2.6.0",
     "minifyify": "^7.1.0"
   },
   "dependencies": {
